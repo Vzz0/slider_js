@@ -45,7 +45,7 @@ function updateSlider(index) {
     timeEl.innerText = slides[index].time;
     costEl.innerText = slides[index].cost;
 
-    // 2. Обновляем картинку (с небольшим эффектом плавности)
+    // 2. Обновляем картинку
     imageEl.style.opacity = 0.5;
     setTimeout(() => {
         imageEl.src = slides[index].image;
