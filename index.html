@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Слайдер js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="projects-section">
+    <div class="container">
+        
+        <div class="projects-info">
+            <h2 class="projects-title">COMPLETED<br><span>PROJECTS</span></h2>
+            <p class="projects-description">
+                Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction 
+market we have made happy more than 1000 families
+            </p>
+
+            <div class="projects-details">
+                <div class="detail-item">
+                    <h3>CITY:</h3>
+                    <p id="slide-city">Rostov-on-Don<br>LCD admiral</p>
+                </div>
+                <div class="detail-item">
+                    <h3>APARTMENT AREA:</h3>
+                    <p id="slide-area">81 m2</p>
+                </div>
+                <div class="detail-item">
+                    <h3>REPAIR TIME:</h3>
+                    <p id="slide-time">3.5 months</p>
+                </div>
+                <div class="detail-item">
+                    <h3>REPAIR COST:</h3>
+                    <p id="slide-cost">Upon request</p>
+                </div>
+            </div>
+
+            <div class="slider-controls">
+                <button class="arrow prev-arrow">
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='41' height='14' viewBox='0 0 41 14' fill='none'><path d='M40.3536 7.35355C40.5488 7.15829 40.5488 6.84171 40.3536 6.64645L37.1716 3.46447C36.9763 3.2692 36.6597 3.2692 36.4645 3.46447C36.2692 3.65973 36.2692 3.97631 36.4645 4.17157L39.2929 7L36.4645 9.82843C36.2692 10.0237 36.2692 10.3403 36.4645 10.5355C36.6597 10.7308 36.9763 10.7308 37.1716 10.5355L40.3536 7.35355ZM0 7.5H40V6.5H0V7.5Z' fill='white'/></svg>" alt="Prev" style="transform: scaleX(-1);">
+                </button>
+                <div class="slider-dots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                </div>
+                <button class="arrow next-arrow">
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='41' height='14' viewBox='0 0 41 14' fill='none'><path d='M40.3536 7.35355C40.5488 7.15829 40.5488 6.84171 40.3536 6.64645L37.1716 3.46447C36.9763 3.2692 36.6597 3.2692 36.4645 3.46447C36.2692 3.65973 36.2692 3.97631 36.4645 4.17157L39.2929 7L36.4645 9.82843C36.2692 10.0237 36.2692 10.3403 36.4645 10.5355C36.6597 10.7308 36.9763 10.7308 37.1716 10.5355L40.3536 7.35355ZM0 7.5H40V6.5H0V7.5Z' fill='white'/></svg>" alt="Next">
+                </button>
+            </div>
+        </div>
+
+        <div class="projects-visuals">
+            <div class="slider-links">
+                <button class="link active" data-index="0">ROSTOV-ON-DON, ADMIRAL</button>
+                <button class="link" data-index="1">SOCHI THIEVES</button>
+                <button class="link" data-index="2">ROSTOV-ON-DON PATRIOTIC</button>
+            </div>
+            <div class="image-wrapper">
+                <img id="slide-image" src="images/First_slide.png" alt="Completed Project">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
